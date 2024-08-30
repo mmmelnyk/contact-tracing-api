@@ -10,3 +10,7 @@
 /Users/mykola/personal repos/contact-tracing-api/Core/Service.Abstractions/obj/Debug/net8.0/refint/Service.Abstractions.dll
 /Users/mykola/personal repos/contact-tracing-api/Core/Service.Abstractions/obj/Debug/net8.0/Service.Abstractions.pdb
 /Users/mykola/personal repos/contact-tracing-api/Core/Service.Abstractions/obj/Debug/net8.0/ref/Service.Abstractions.dll
+/Users/mykola/personal repos/contact-tracing-api/Core/Service.Abstractions/bin/Debug/net8.0/Shared.dll
+/Users/mykola/personal repos/contact-tracing-api/Core/Service.Abstractions/bin/Debug/net8.0/Shared.pdb
+/Users/mykola/personal repos/contact-tracing-api/Core/Service.Abstractions/obj/Debug/net8.0/Service.Abstractions.csproj.AssemblyReference.cache
+/Users/mykola/personal repos/contact-tracing-api/Core/Service.Abstractions/obj/Debug/net8.0/Service.Abstractions.csproj.CopyComplete

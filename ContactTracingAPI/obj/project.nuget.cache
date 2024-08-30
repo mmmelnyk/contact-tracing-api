@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "kz8vV20suKQ1qQkZi1V9Kw0jdj4eeYOmwjDHT0zFe2RLdrYyr3DPd+B8caSblIsxgkHfJLoErstKAGH6jsF6SA==",
+  "dgSpecHash": "rezZfAlv+FBU28jAY+P6vAQkEHhleJZch/uGrzGUj83rY8WYk0Ys6oovhuP0rka1ObQ3xK6lpNRqAfq2MaHmyQ==",
   "success": true,
   "projectFilePath": "/Users/mykola/personal repos/contact-tracing-api/ContactTracingAPI/contact-tracing-api.csproj",
   "expectedPackageFiles": [

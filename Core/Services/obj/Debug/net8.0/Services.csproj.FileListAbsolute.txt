@@ -16,3 +16,5 @@
 /Users/mykola/personal repos/contact-tracing-api/Core/Services/obj/Debug/net8.0/refint/Services.dll
 /Users/mykola/personal repos/contact-tracing-api/Core/Services/obj/Debug/net8.0/Services.pdb
 /Users/mykola/personal repos/contact-tracing-api/Core/Services/obj/Debug/net8.0/ref/Services.dll
+/Users/mykola/personal repos/contact-tracing-api/Core/Services/bin/Debug/net8.0/Shared.dll
+/Users/mykola/personal repos/contact-tracing-api/Core/Services/bin/Debug/net8.0/Shared.pdb

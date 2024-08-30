@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("contact-tracing-api")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+50753d0b5ae0ff5a8cfe5bbd39613a160d563dc3")]
 [assembly: System.Reflection.AssemblyProductAttribute("contact-tracing-api")]
 [assembly: System.Reflection.AssemblyTitleAttribute("contact-tracing-api")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

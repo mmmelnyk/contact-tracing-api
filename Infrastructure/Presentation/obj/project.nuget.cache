@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "QvHEz9Ly6IIhsYXy8dWI70UjOMpnqTaQTu20V9dUdNSO4vJW9XxRgmioTAOXVV1iu/i7FeDpkOwbfo5obmv1Rw==",
+  "dgSpecHash": "w+TC6XdrOMR/ytatpjJsT1ZV9I0GTPbM531A6IG2bOyOdlmjEkfm/OR4PwFVNLiG1MkMOrlixc1NVQQwMd1lqQ==",
   "success": true,
   "projectFilePath": "/Users/mykola/personal repos/contact-tracing-api/Infrastructure/Presentation/Presentation.csproj",
   "expectedPackageFiles": [

@@ -15,11 +15,24 @@
       "Service.Abstractions/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "Shared": "1.0.0"
+        },
         "compile": {
           "bin/placeholder/Service.Abstractions.dll": {}
         },
         "runtime": {
           "bin/placeholder/Service.Abstractions.dll": {}
+        }
+      },
+      "Shared/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "compile": {
+          "bin/placeholder/Shared.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Shared.dll": {}
         }
       }
     }
@@ -34,12 +47,18 @@
       "type": "project",
       "path": "../Service.Abstractions/Service.Abstractions.csproj",
       "msbuildProject": "../Service.Abstractions/Service.Abstractions.csproj"
+    },
+    "Shared/1.0.0": {
+      "type": "project",
+      "path": "../../Shared/Shared.csproj",
+      "msbuildProject": "../../Shared/Shared.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net8.0": [
       "Domain >= 1.0.0",
-      "Service.Abstractions >= 1.0.0"
+      "Service.Abstractions >= 1.0.0",
+      "Shared >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -74,6 +93,9 @@
             },
             "/Users/mykola/personal repos/contact-tracing-api/Core/Service.Abstractions/Service.Abstractions.csproj": {
               "projectPath": "/Users/mykola/personal repos/contact-tracing-api/Core/Service.Abstractions/Service.Abstractions.csproj"
+            },
+            "/Users/mykola/personal repos/contact-tracing-api/Shared/Shared.csproj": {
+              "projectPath": "/Users/mykola/personal repos/contact-tracing-api/Shared/Shared.csproj"
             }
           }
         }

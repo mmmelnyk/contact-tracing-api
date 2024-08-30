@@ -33,7 +33,7 @@ public class UsersController : ControllerBase
     {
         var newUser = await _serviceManager.UserService.CreateAsync(user);
 
-        return CreatedAtAction(nameof(GetUserById), new { UserId = UserDto.Id }, newUser);
+        return CreatedAtAction(nameof(GetUserById), new { UserId = newUser.Id }, newUser);
     }
 
     [HttpDelete("{UserId:guid}")]

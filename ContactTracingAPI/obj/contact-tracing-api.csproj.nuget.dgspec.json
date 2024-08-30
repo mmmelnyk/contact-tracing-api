@@ -160,7 +160,11 @@
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
-            "projectReferences": {}
+            "projectReferences": {
+              "/Users/mykola/personal repos/contact-tracing-api/Shared/Shared.csproj": {
+                "projectPath": "/Users/mykola/personal repos/contact-tracing-api/Shared/Shared.csproj"
+              }
+            }
           }
         },
         "warningProperties": {
@@ -221,6 +225,9 @@
               },
               "/Users/mykola/personal repos/contact-tracing-api/Core/Service.Abstractions/Service.Abstractions.csproj": {
                 "projectPath": "/Users/mykola/personal repos/contact-tracing-api/Core/Service.Abstractions/Service.Abstractions.csproj"
+              },
+              "/Users/mykola/personal repos/contact-tracing-api/Shared/Shared.csproj": {
+                "projectPath": "/Users/mykola/personal repos/contact-tracing-api/Shared/Shared.csproj"
               }
             }
           }

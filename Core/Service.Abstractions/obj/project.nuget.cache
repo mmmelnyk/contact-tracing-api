@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "wHAAKIn//kPIEujrkIywnc1FUqao+gMf6VUaoHOFUQS8nkkBhJd6azdzSEmQ9vbOmx3MlQdRBvOjNaTArZ6XRQ==",
+  "dgSpecHash": "PeMfFkaCZFYLQ/byn9pnDr1PnuwPh3ymmaeNqcCP9BZfkpqL6nC32uAQAktx4kVjQjl6HBvtKWuV+Ck7XgYbrA==",
   "success": true,
   "projectFilePath": "/Users/mykola/personal repos/contact-tracing-api/Core/Service.Abstractions/Service.Abstractions.csproj",
   "expectedPackageFiles": [],

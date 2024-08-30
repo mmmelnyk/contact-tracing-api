@@ -4,3 +4,15 @@
 /Users/mykola/personal repos/contact-tracing-api/Infrastructure/Presentation/obj/Debug/net8.0/Presentation.AssemblyInfo.cs
 /Users/mykola/personal repos/contact-tracing-api/Infrastructure/Presentation/obj/Debug/net8.0/Presentation.csproj.CoreCompileInputs.cache
 /Users/mykola/personal repos/contact-tracing-api/Infrastructure/Presentation/obj/Debug/net8.0/Presentation.sourcelink.json
+/Users/mykola/personal repos/contact-tracing-api/Infrastructure/Presentation/bin/Debug/net8.0/Presentation.deps.json
+/Users/mykola/personal repos/contact-tracing-api/Infrastructure/Presentation/bin/Debug/net8.0/Presentation.dll
+/Users/mykola/personal repos/contact-tracing-api/Infrastructure/Presentation/bin/Debug/net8.0/Presentation.pdb
+/Users/mykola/personal repos/contact-tracing-api/Infrastructure/Presentation/bin/Debug/net8.0/Service.Abstractions.dll
+/Users/mykola/personal repos/contact-tracing-api/Infrastructure/Presentation/bin/Debug/net8.0/Shared.dll
+/Users/mykola/personal repos/contact-tracing-api/Infrastructure/Presentation/bin/Debug/net8.0/Shared.pdb
+/Users/mykola/personal repos/contact-tracing-api/Infrastructure/Presentation/bin/Debug/net8.0/Service.Abstractions.pdb
+/Users/mykola/personal repos/contact-tracing-api/Infrastructure/Presentation/obj/Debug/net8.0/Presentation.csproj.CopyComplete
+/Users/mykola/personal repos/contact-tracing-api/Infrastructure/Presentation/obj/Debug/net8.0/Presentation.dll
+/Users/mykola/personal repos/contact-tracing-api/Infrastructure/Presentation/obj/Debug/net8.0/refint/Presentation.dll
+/Users/mykola/personal repos/contact-tracing-api/Infrastructure/Presentation/obj/Debug/net8.0/Presentation.pdb
+/Users/mykola/personal repos/contact-tracing-api/Infrastructure/Presentation/obj/Debug/net8.0/ref/Presentation.dll

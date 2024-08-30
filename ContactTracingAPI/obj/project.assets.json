@@ -3007,6 +3007,9 @@
       "Service.Abstractions/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "Shared": "1.0.0"
+        },
         "compile": {
           "bin/placeholder/Service.Abstractions.dll": {}
         },
@@ -3019,7 +3022,8 @@
         "framework": ".NETCoreApp,Version=v8.0",
         "dependencies": {
           "Domain": "1.0.0",
-          "Service.Abstractions": "1.0.0"
+          "Service.Abstractions": "1.0.0",
+          "Shared": "1.0.0"
         },
         "compile": {
           "bin/placeholder/Services.dll": {}

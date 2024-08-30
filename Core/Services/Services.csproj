@@ -9,6 +9,7 @@
   <ItemGroup>
     <ProjectReference Include="..\Service.Abstractions\Service.Abstractions.csproj" />
     <ProjectReference Include="..\Domain\Domain.csproj" />
+    <ProjectReference Include="..\..\Shared\Shared.csproj" />
   </ItemGroup>
   
 </Project>
