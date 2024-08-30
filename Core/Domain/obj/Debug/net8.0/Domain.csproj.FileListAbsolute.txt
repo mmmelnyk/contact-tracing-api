@@ -1,0 +1,12 @@
+/Users/mykola/personal repos/contact-tracing-api/Core/Domain/bin/Debug/net8.0/Domain.deps.json
+/Users/mykola/personal repos/contact-tracing-api/Core/Domain/bin/Debug/net8.0/Domain.dll
+/Users/mykola/personal repos/contact-tracing-api/Core/Domain/bin/Debug/net8.0/Domain.pdb
+/Users/mykola/personal repos/contact-tracing-api/Core/Domain/obj/Debug/net8.0/Domain.GeneratedMSBuildEditorConfig.editorconfig
+/Users/mykola/personal repos/contact-tracing-api/Core/Domain/obj/Debug/net8.0/Domain.AssemblyInfoInputs.cache
+/Users/mykola/personal repos/contact-tracing-api/Core/Domain/obj/Debug/net8.0/Domain.AssemblyInfo.cs
+/Users/mykola/personal repos/contact-tracing-api/Core/Domain/obj/Debug/net8.0/Domain.csproj.CoreCompileInputs.cache
+/Users/mykola/personal repos/contact-tracing-api/Core/Domain/obj/Debug/net8.0/Domain.sourcelink.json
+/Users/mykola/personal repos/contact-tracing-api/Core/Domain/obj/Debug/net8.0/Domain.dll
+/Users/mykola/personal repos/contact-tracing-api/Core/Domain/obj/Debug/net8.0/refint/Domain.dll
+/Users/mykola/personal repos/contact-tracing-api/Core/Domain/obj/Debug/net8.0/Domain.pdb
+/Users/mykola/personal repos/contact-tracing-api/Core/Domain/obj/Debug/net8.0/ref/Domain.dll

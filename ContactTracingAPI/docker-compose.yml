@@ -1,0 +1,10 @@
+version: '3.4'
+
+services:
+  contact-tracing-api:
+    image: ${DOCKER_REGISTRY-}contacttracingapi
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "8080:80"

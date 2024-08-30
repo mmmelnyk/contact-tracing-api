@@ -1,0 +1,6 @@
+/Users/mykola/personal repos/contact-tracing-api/Infrastructure/Presentation/obj/Debug/net8.0/Presentation.csproj.AssemblyReference.cache
+/Users/mykola/personal repos/contact-tracing-api/Infrastructure/Presentation/obj/Debug/net8.0/Presentation.GeneratedMSBuildEditorConfig.editorconfig
+/Users/mykola/personal repos/contact-tracing-api/Infrastructure/Presentation/obj/Debug/net8.0/Presentation.AssemblyInfoInputs.cache
+/Users/mykola/personal repos/contact-tracing-api/Infrastructure/Presentation/obj/Debug/net8.0/Presentation.AssemblyInfo.cs
+/Users/mykola/personal repos/contact-tracing-api/Infrastructure/Presentation/obj/Debug/net8.0/Presentation.csproj.CoreCompileInputs.cache
+/Users/mykola/personal repos/contact-tracing-api/Infrastructure/Presentation/obj/Debug/net8.0/Presentation.sourcelink.json
