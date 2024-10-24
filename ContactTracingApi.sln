@@ -1,35 +1,36 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 17
+# 17
 VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Core", "Core", "{754D6927-EDCC-439E-A3D9-0A91ED610F69}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Service.Abstractions", "Core\Service.Abstractions\Service.Abstractions.csproj", "{571CAE4B-A01B-469D-8AE0-F5658606A527}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Service.Abstractions", "Core\Service.Abstractions\Service.Abstractions.csproj", "{571CAE4B-A01B-469D-8AE0-F5658606A527}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Domain", "Core\Domain\Domain.csproj", "{042F3023-B55B-4BE8-84DE-1299E18CAFFC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Domain", "Core\Domain\Domain.csproj", "{042F3023-B55B-4BE8-84DE-1299E18CAFFC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Services", "Core\Services\Services.csproj", "{75797F86-5C53-4B2D-AC1E-6DC4A4DD1D8A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Services", "Core\Services\Services.csproj", "{75797F86-5C53-4B2D-AC1E-6DC4A4DD1D8A}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Shared", "Shared", "{B550F0E1-8DE7-4F73-B213-F6F2DCDDD872}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Shared", "Shared\Shared.csproj", "{65FCEA02-7E91-4BFA-A36B-C601F0072F61}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Shared", "Shared\Shared.csproj", "{65FCEA02-7E91-4BFA-A36B-C601F0072F61}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "contact-tracing-api", "ContactTracingAPI\contact-tracing-api.csproj", "{78173CE7-5CB1-4A9F-821A-8843723E8008}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "contact-tracing-api", "ContactTracingAPI\contact-tracing-api.csproj", "{78173CE7-5CB1-4A9F-821A-8843723E8008}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infrastructure", "Infrastructure", "{591AE40C-1B50-4E66-9323-1079B09D0861}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Presentation", "Infrastructure\Presentation\Presentation.csproj", "{5EE8501D-834D-4285-8921-BBA4296F2128}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Presentation", "Infrastructure\Presentation\Presentation.csproj", "{5EE8501D-834D-4285-8921-BBA4296F2128}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Persistence", "Infrastructure\Persistence\Persistence.csproj", "{DE8D7772-66F2-437C-BE93-FFFC03831FB6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Persistence", "Infrastructure\Persistence\Persistence.csproj", "{DE8D7772-66F2-437C-BE93-FFFC03831FB6}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Example", "Example", "{CC2E2E36-23B8-4200-A6C5-9AB3EE7A6CA8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Contact.Tracing.Api", "Contact.Tracing.Api\Contact.Tracing.Api.csproj", "{949F7F9C-50B2-4D75-8840-0F25F7FC69E0}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
-	EndGlobalSection
-	GlobalSection(SolutionProperties) = preSolution
-		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{571CAE4B-A01B-469D-8AE0-F5658606A527}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
@@ -60,6 +61,13 @@ Global
 		{DE8D7772-66F2-437C-BE93-FFFC03831FB6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DE8D7772-66F2-437C-BE93-FFFC03831FB6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DE8D7772-66F2-437C-BE93-FFFC03831FB6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{949F7F9C-50B2-4D75-8840-0F25F7FC69E0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{949F7F9C-50B2-4D75-8840-0F25F7FC69E0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{949F7F9C-50B2-4D75-8840-0F25F7FC69E0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{949F7F9C-50B2-4D75-8840-0F25F7FC69E0}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{571CAE4B-A01B-469D-8AE0-F5658606A527} = {754D6927-EDCC-439E-A3D9-0A91ED610F69}
@@ -68,5 +76,9 @@ Global
 		{65FCEA02-7E91-4BFA-A36B-C601F0072F61} = {B550F0E1-8DE7-4F73-B213-F6F2DCDDD872}
 		{5EE8501D-834D-4285-8921-BBA4296F2128} = {591AE40C-1B50-4E66-9323-1079B09D0861}
 		{DE8D7772-66F2-437C-BE93-FFFC03831FB6} = {591AE40C-1B50-4E66-9323-1079B09D0861}
+		{949F7F9C-50B2-4D75-8840-0F25F7FC69E0} = {CC2E2E36-23B8-4200-A6C5-9AB3EE7A6CA8}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {7C343334-F53D-45AC-905D-C2F7A482E092}
 	EndGlobalSection
 EndGlobal
