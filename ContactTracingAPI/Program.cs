@@ -1,16 +1,10 @@
-using Domain.Repositories;
-using Persistence.Repositories;
 using Persistence;
-using Service.Abstractions;
-using Services;
 using Microsoft.EntityFrameworkCore;
 using Web.Middleware;
 
 var builder = WebApplication.CreateBuilder(args);
 
-builder.Services.AddScoped<IServiceManager, ServiceManager>();
-
-builder.Services.AddScoped<IRepositoryManager, RepositoryManager>();
+builder.Services.AddMediatR(cfg => cfg.RegisterServicesFromAssembly(Assembly.GetExecutingAssembly()));
 
 builder.Services.AddDbContextPool<RepositoryDbContext>(b =>
 {

@@ -8,8 +8,8 @@ namespace Domain.Repositories
 
         Task<User> GetByIdAsync(Guid UserId, CancellationToken cancellationToken = default);
 
-        void Insert(User user);
+        Task<Guid> InsertAsync(User user, CancellationToken cancellationToken = default);
 
-        void Remove(User user);
+        Task RemoveAsync(User user, CancellationToken cancellationToken = default);
     }
 }

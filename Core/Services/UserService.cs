@@ -1,13 +1,10 @@
-﻿using Domain.Repositories;
-using Service.Abstractions;
+﻿using Service.Abstractions;
 using Shared;
 
 namespace Services;
 
-public class UserService(IRepositoryManager repositoryManager) : IUserService
+public class UserService(IMediator mediator) : IUserService
 {
-    private readonly IRepositoryManager _repositoryManager = repositoryManager;
-
     public Task AddUser()
     {
         throw new NotImplementedException();

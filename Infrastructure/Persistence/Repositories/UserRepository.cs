@@ -19,7 +19,16 @@ internal sealed class UserRepository : IUserRepository
         return user ?? default;
     }
 
-    public void Insert(User User) => _dbContext.Users.Add(User);
+    public async Task<Guid> InsertAsync(User user, CancellationToken cancellationToken = default) {
+        var entityEntry = await _dbContext.Users.AddAsync(user, cancellationToken);
+        await _dbContext.SaveChangesAsync(cancellationToken);
+        
+        return entityEntry.Entity.Id;
+    }
 
-    public void Remove(User User) => _dbContext.Users.Remove(User);
+    public async Task RemoveAsync(User user, CancellationToken cancellationToken = default)
+    {
+        _dbContext.Users.Remove(user);
+        await _dbContext.SaveChangesAsync(cancellationToken);
+    }
 }
