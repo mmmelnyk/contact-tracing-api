@@ -1,6 +1,9 @@
 # Use the official .NET image as a parent image
 FROM mcr.microsoft.com/dotnet/aspnet:8.0 AS base
 WORKDIR /app
+
+ENV ASPNETCORE_ENVIRONMENT=Development
+
 EXPOSE 80
 
 # Use the SDK image to build the app

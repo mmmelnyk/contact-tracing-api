@@ -18,10 +18,15 @@ public class UsersController : ApiControllerBase
         return Ok(result);
     }
 
-    [HttpGet("{id}")]
-    public async Task<IActionResult> GetUserById(string id, CancellationToken cancellationToken)
+    /// <summary>
+    /// GetUserById
+    /// </summary>
+    /// <param name="id"></param>
+    /// <param name="cancellationToken"></param>
+    /// <returns></returns>
+    [HttpGet("get")]
+    public async Task<IActionResult> GetUserById(GetUserRequest request, CancellationToken cancellationToken)
     {
-        var request = new GetUserRequest { Id = Guid.Parse(id) };
         var result = await Mediator.Send(request, cancellationToken);
 
         return Ok(result);
