@@ -3,7 +3,7 @@ using Shared;
 
 namespace Services;
 
-public class UserService(IMediator mediator) : IUserService
+public class UserService() : IUserService
 {
     public Task AddUser()
     {
