@@ -28,7 +28,7 @@ public class UserTests
         var handler = new CreateUserRequestHandler(userRepoMoq.Object);
 
         // Act
-        var response = await handler.Handle(request, new System.Threading.CancellationToken());
+        var response = await handler.Handle(request, new CancellationToken());
         
         // Assert
         userRepoMoq.Verify(x => x.InsertAsync(It.IsAny<User>(), It.IsAny<CancellationToken>()));
