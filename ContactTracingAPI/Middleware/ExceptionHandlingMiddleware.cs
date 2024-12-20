@@ -1,7 +1,7 @@
 using System.Text.Json;
 using Domain.Exceptions;
 
-namespace Web.Middleware;
+namespace ContactTracingAPI.Middleware;
 
 internal sealed class ExceptionHandlingMiddleware(ILogger<ExceptionHandlingMiddleware> logger) : IMiddleware
 {

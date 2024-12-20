@@ -1,47 +1,45 @@
 using Shared;
 using Microsoft.AspNetCore.Mvc;
 using Service.Abstractions;
+using Presentation.Requests;
 
 namespace Presentation.Controllers;
 
 [ApiController]
 [Route("api/Users")]
-public class UsersController : ControllerBase
+public class UsersController : ApiControllerBase
 {
-    private readonly IServiceManager _serviceManager;
-
-    public UsersController(IServiceManager serviceManager) => _serviceManager = serviceManager;
-
     [HttpGet]
     public async Task<IActionResult> GetUsers(CancellationToken cancellationToken)
     {
-        var Users = await _serviceManager.UserService.GetAllAsync(cancellationToken);
+        var request = new GetUsersRequest();
+        var result = await Mediator.Send(request, cancellationToken);
 
-        return Ok(Users);
+        return Ok(result);
     }
 
-    [HttpGet("{UserId:guid}")]
-    public async Task<IActionResult> GetUserById(Guid UserId, CancellationToken cancellationToken)
+    [HttpGet("{id}")]
+    public async Task<IActionResult> GetUserById(string id, CancellationToken cancellationToken)
     {
-        var UserDto = await _serviceManager.UserService.GetByIdAsync(UserId, cancellationToken);
+        var request = new GetUserRequest { Id = Guid.Parse(id) };
+        var result = await Mediator.Send(request, cancellationToken);
 
-        return Ok(UserDto);
+        return Ok(result);
     }
 
-    [HttpPost]
-    public async Task<IActionResult> CreateUser([FromBody] UserDto user)
+    [HttpPost("create")]
+    public async Task<IActionResult> CreateUser([FromBody] CreateUserRequest request, CancellationToken cancellationToken)
     {
-        var newUser = await _serviceManager.UserService.CreateAsync(user);
+        var result = await Mediator.Send(request, cancellationToken);
 
-        return CreatedAtAction(nameof(GetUserById), new { UserId = newUser.Id }, newUser);
+        return Accepted(result);
     }
 
-    [HttpDelete("{UserId:guid}")]
-    public async Task<IActionResult> DeleteUser(Guid UserId, CancellationToken cancellationToken)
+    [HttpDelete("delete")]
+    public async Task<IActionResult> DeleteUser([FromBody] DeleteUserRequest request, CancellationToken cancellationToken)
     {
-        //Test
-        await _serviceManager.UserService.DeleteAsync(UserId, cancellationToken);
+        var result = await Mediator.Send(request, cancellationToken);
 
-        return NoContent();
+        return Accepted(result);
     }
 }

@@ -1,9 +1,11 @@
 using MediatR;
+using System.ComponentModel.DataAnnotations;
 
-namespace ContactTracingAPI.Interaction.Requests
+namespace Presentation.Requests
 {
-    public class AddUserRequest : IRequest<int>
+    public class UpdateUserRequest : IRequest<int>
     {
+        [Required]
         public Guid Id { get; set; }
         public required string DeviceId { get; set; }
         public required string LastLogin { get; set; }

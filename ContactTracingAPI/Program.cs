@@ -1,6 +1,7 @@
 using Persistence;
 using Microsoft.EntityFrameworkCore;
-using Web.Middleware;
+using System.Reflection;
+using ContactTracingAPI.Middleware;
 
 var builder = WebApplication.CreateBuilder(args);
 

@@ -19,9 +19,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "contact-tracing-api", "Cont
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infrastructure", "Infrastructure", "{591AE40C-1B50-4E66-9323-1079B09D0861}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Presentation", "Infrastructure\Presentation\Presentation.csproj", "{5EE8501D-834D-4285-8921-BBA4296F2128}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Presentation", "Infrastructure/Presentation/Presentation.csproj", "{5EE8501D-834D-4285-8921-BBA4296F2128}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Persistence", "Infrastructure\Persistence\Persistence.csproj", "{DE8D7772-66F2-437C-BE93-FFFC03831FB6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Persistence", "Infrastructure/Persistence/Persistence.csproj", "{DE8D7772-66F2-437C-BE93-FFFC03831FB6}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Example", "Example", "{CC2E2E36-23B8-4200-A6C5-9AB3EE7A6CA8}"
 EndProject

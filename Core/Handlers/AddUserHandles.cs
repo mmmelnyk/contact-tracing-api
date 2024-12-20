@@ -2,7 +2,7 @@ using ContactTracingAPI.Interaction.Requests;
 using Domain.Repositories;
 using MediatR;
 
-namespace ContactTracingAPI.Interaction.Handlers
+namespace Shared.Interaction.Handlers
 {
     public class AddUserHandler : IRequestHandler<AddUserRequest, int>
     {
