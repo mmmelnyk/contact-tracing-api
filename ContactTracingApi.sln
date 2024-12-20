@@ -19,9 +19,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "contact-tracing-api", "Cont
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infrastructure", "Infrastructure", "{591AE40C-1B50-4E66-9323-1079B09D0861}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Presentation", "Infrastructure/Presentation/Presentation.csproj", "{5EE8501D-834D-4285-8921-BBA4296F2128}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Presentation", "Infrastructure\Presentation\Presentation.csproj", "{5EE8501D-834D-4285-8921-BBA4296F2128}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Persistence", "Infrastructure/Persistence/Persistence.csproj", "{DE8D7772-66F2-437C-BE93-FFFC03831FB6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Persistence", "Infrastructure\Persistence\Persistence.csproj", "{DE8D7772-66F2-437C-BE93-FFFC03831FB6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ContactTracingAPI.Tests", "ContactTracingAPI.Tests\ContactTracingAPI.Tests.csproj", "{06E4C2FA-043A-409C-AB1D-8EEB9B6CA595}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -57,6 +59,10 @@ Global
 		{DE8D7772-66F2-437C-BE93-FFFC03831FB6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DE8D7772-66F2-437C-BE93-FFFC03831FB6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DE8D7772-66F2-437C-BE93-FFFC03831FB6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{06E4C2FA-043A-409C-AB1D-8EEB9B6CA595}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{06E4C2FA-043A-409C-AB1D-8EEB9B6CA595}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{06E4C2FA-043A-409C-AB1D-8EEB9B6CA595}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{06E4C2FA-043A-409C-AB1D-8EEB9B6CA595}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

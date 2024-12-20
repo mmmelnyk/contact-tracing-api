@@ -34,6 +34,10 @@ if (app.Environment.IsDevelopment())
     });
 }
 
+var connectionString = builder.Configuration.GetConnectionString("ContactTracingDb");
+builder.Services.AddDbContext<RepositoryDbContext>(options => 
+    options.UseNpgsql(connectionString));
+
 app.UseMiddleware<ExceptionHandlingMiddleware>();
 
 app.UseHttpsRedirection();
