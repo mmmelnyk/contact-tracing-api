@@ -20,7 +20,7 @@ namespace Services.Handlers
             var result = await _userRepository.InsertAsync(
                 new User
                 {
-                    Id = request.Id,
+                    Id = new Guid(),
                     DeviceId = request.DeviceId,
                     LastLogin = request.LastLogin
                 }, 

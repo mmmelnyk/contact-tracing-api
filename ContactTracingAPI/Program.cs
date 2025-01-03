@@ -1,18 +1,16 @@
 using Persistence;
 using Microsoft.EntityFrameworkCore;
-using System.Reflection;
 using ContactTracingAPI.Middleware;
+using Services.Handlers;
+using Persistence.Repositories;
 
 var builder = WebApplication.CreateBuilder(args);
 
-builder.Services.AddMediatR(cfg => cfg.RegisterServicesFromAssembly(Assembly.GetExecutingAssembly()));
+builder.Services.AddMediatR(cfg => cfg.RegisterServicesFromAssemblies(
+    typeof(CreateUserRequestHandler).Assembly
+));
 
-builder.Services.AddDbContextPool<RepositoryDbContext>(b =>
-{
-    var connectionString = builder.Configuration.GetConnectionString("Database");
-
-    b.UseNpgsql(connectionString);
-});
+builder.Services.AddScoped<Domain.Repositories.IUserRepository, UserRepository>();
 
 builder.Services.AddControllers()
     .AddApplicationPart(typeof(Presentation.AssemblyReference).Assembly);
@@ -20,6 +18,13 @@ builder.Services.AddControllers()
 // Add Swagger services
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
+
+var connectionString = builder.Configuration.GetConnectionString("ContactTracingDb");
+builder.Services.AddDbContext<RepositoryDbContext>(options => 
+    options.UseNpgsql(connectionString));
+
+// Register the ExceptionHandlingMiddleware
+builder.Services.AddTransient<ExceptionHandlingMiddleware>();
 
 var app = builder.Build();
 
@@ -33,10 +38,6 @@ if (app.Environment.IsDevelopment())
         c.RoutePrefix = string.Empty; // Set Swagger UI at the app's root
     });
 }
-
-var connectionString = builder.Configuration.GetConnectionString("ContactTracingDb");
-builder.Services.AddDbContext<RepositoryDbContext>(options => 
-    options.UseNpgsql(connectionString));
 
 app.UseMiddleware<ExceptionHandlingMiddleware>();
 

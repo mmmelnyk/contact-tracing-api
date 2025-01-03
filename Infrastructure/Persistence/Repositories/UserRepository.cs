@@ -4,7 +4,7 @@ using Microsoft.EntityFrameworkCore;
 
 namespace Persistence.Repositories;
 
-internal sealed class UserRepository : IUserRepository
+public class UserRepository : IUserRepository
 {
     private readonly RepositoryDbContext _dbContext;
 

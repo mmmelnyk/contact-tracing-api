@@ -4,6 +4,6 @@ namespace Domain.Entities
     {
         public Guid Id { get; set; }
         public string DeviceId { get; set; }
-        public string LastLogin { get; set; }
+        public DateTime LastLogin { get; set; }
     }
 }

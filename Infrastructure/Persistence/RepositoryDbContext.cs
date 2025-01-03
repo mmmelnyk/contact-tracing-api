@@ -1,17 +1,18 @@
 using Domain.Entities;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Configuration;
 
 namespace Persistence;
 
 public sealed class RepositoryDbContext : DbContext
 {
-    public RepositoryDbContext(DbContextOptions options)
-        : base(options)
-    {
-    }
+    protected readonly IConfiguration Configuration;
+    public RepositoryDbContext(IConfiguration configuration) => Configuration = configuration;
 
     public DbSet<User> Users { get; set; }
 
-    protected override void OnModelCreating(ModelBuilder modelBuilder) =>
-        modelBuilder.ApplyConfigurationsFromAssembly(typeof(RepositoryDbContext).Assembly);
+    protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+    {
+        optionsBuilder.UseNpgsql(Configuration.GetConnectionString("ContactTracingDb"));
+    }
 }

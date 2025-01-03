@@ -3,5 +3,6 @@
 public class UserDto
 {
     public string DeviceId { get; set; }
-    public string Id { get; set; }
+    public Guid Id { get; set; }
+    public DateTime LastLogin { get; set; }
 }

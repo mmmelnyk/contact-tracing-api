@@ -7,6 +7,6 @@ namespace Presentation.Requests
     {
         public Guid Id { get; set; }
         public required string DeviceId { get; set; }
-        public required string LastLogin { get; set; }
+        public required DateTime LastLogin { get; set; }
     }
 }
