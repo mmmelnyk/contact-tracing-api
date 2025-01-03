@@ -22,7 +22,6 @@ namespace Services.Handlers
                 {
                     Id = new Guid(),
                     DeviceId = request.DeviceId,
-                    LastLogin = request.LastLogin
                 }, 
                 cancellationToken
             );

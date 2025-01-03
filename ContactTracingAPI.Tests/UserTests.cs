@@ -23,7 +23,6 @@ public class UserTests
         var request = new CreateUserRequest
         {
             DeviceId = "someDeviceId",
-            LastLogin = DateTime.UtcNow
         };
         var handler = new CreateUserRequestHandler(userRepoMoq.Object);
 
