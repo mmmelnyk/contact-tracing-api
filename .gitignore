@@ -396,3 +396,10 @@ FodyWeavers.xsd
 
 # JetBrains Rider
 *.sln.iml
+
+# coverage reports
+ContactTracingAPI.Tests/coverage-report/
+ContactTracingAPI.Tests/test-results/
+ContactTracingAPI.Tests/test-result.cobertura.xml
+
+Infrastructure/Presentation/obj/

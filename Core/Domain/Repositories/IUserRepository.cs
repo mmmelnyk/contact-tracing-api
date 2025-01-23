@@ -10,6 +10,8 @@ namespace Domain.Repositories
 
         Task<Guid> InsertAsync(User user, CancellationToken cancellationToken = default);
 
-        Task RemoveAsync(User user, CancellationToken cancellationToken = default);
+        Task RemoveAsync(Guid UserId, CancellationToken cancellationToken = default);
+
+        Task UpdateAsync(User user, CancellationToken cancellationToken = default);
     }
 }
